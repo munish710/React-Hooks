@@ -17,6 +17,8 @@ import DataFetchingTwo from './components/DataFetchingTwo';
 import HookMemo from './components/HookMemo';
 import RefFocus from './components/RefFocus';
 import RefTimer from './components/RefTimer';
+import CustomTitleone from './components/CustomTitleone';
+import CustomTitleTwo from './components/CustomTitleTwo';
 
 
 export const UserContext=React.createContext()
@@ -42,8 +44,10 @@ function App() {
   const[count,dispatch]=useReducer(reducer,initialState)
   return (
     <div className="App">
-    <RefTimer/>
-      {/*<RefFocus/>
+    <CustomTitleone/>
+    <CustomTitleTwo/>
+    {/*<RefTimer/>
+      <RefFocus/>
      <HookMemo/>
     <DataFetchingTwo/>
     <CountContext.Provider value={{countValue:count,countDispatch:dispatch}}>
